@@ -6,7 +6,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="cs-footer_item">
               <div class="cs-text_widget">
-                <img src="http://gavaweb.com/wp-content/uploads/2023/05/logo-black.png" alt="Thumb">
+                <img src="http://gavaweb.com/wp-content/uploads/2024/11/logo-black.png" alt="Thumb">
                 <p>Welcome to GAVAWEB.com, your new partner in the digital world.</p>
               </div>
               <div class="cs-social_btns cs-style1">
