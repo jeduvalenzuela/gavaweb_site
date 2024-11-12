@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Laralink">
   <!-- Favicon Icon -->
-  <link rel="icon" href="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/favicon.png">
+  <link rel="icon" href="https://gavaweb.com/wp-content/uploads/2024/11/cropped-logo-black.png">
   <!-- Site Title -->
   <title>GAVAWEB.com - Web Design + Digital Marketing</title>
   <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/plugins/bootstrap.min.css">
@@ -34,7 +34,7 @@
         <div class="cs-main_header_in">
           <div class="cs-main_header_left">
             <a class="cs-site_branding" href="index-2.html">
-              <img src="http://gavaweb.com/wp-content/uploads/2023/05/logo-black.png" alt="Logo">
+              <img src="http://gavaweb.com/wp-content/uploads/2024/11/logo-black.png" alt="Logo">
             </a>
           </div>
           <div class="cs-main_header_center">
@@ -151,7 +151,7 @@
                     </li>
                   </ul>
                 </li-->
-                <li><a href="about.html">Home</a></li>
+                <li><a href="about.html">Hello!</a></li>
                 <!--li><a href="about.html">About</a></li>
                 <li class="menu-item-has-children"><a href="service.html">Services</a>
                   <ul>
