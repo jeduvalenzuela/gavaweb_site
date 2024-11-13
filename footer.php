@@ -147,6 +147,7 @@
   <script src="<?php echo get_bloginfo( 'template_directory' );?>/assets/js/plugins/wow.min.js"></script>
   <script src="<?php echo get_bloginfo( 'template_directory' );?>/assets/js/plugins/gsap.min.js"></script>
   <script src="<?php echo get_bloginfo( 'template_directory' );?>/assets/js/main.js"></script>
+  <?php wp_footer(); ?>
 </body>
 
 <!-- Mirrored from static.laralink.com/html/arino/digital-agency.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Feb 2024 14:57:14 GMT -->

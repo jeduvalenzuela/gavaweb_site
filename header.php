@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/plugins/animate.css">
   <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+6I+qvGs2dG09LjMzON6qmxIig+ZZ3bJhw2yLuMzWcDpHqQwPIoKR9s1/9r3eE6U7MFQC9UDTPl3MzgkgAhcYQ==" crossorigin="anonymous" />
-
+  <?php wp_head(); ?>
 </head>
 
 <body>
