@@ -228,7 +228,7 @@
       <div class="cs-side_header_in">
         <div class="cs-side_header_shape"></div>
         <a class="cs-site_branding" href="index-2.html">
-          <img src="https://gavaweb.com/wp-content/uploads/2024/11/cropped-logo-black.png" alt="Logo">
+          <img src="http://gavaweb.com/wp-content/uploads/2024/11/logo-black.png" alt="Logo">
         </a>
         <div class="cs-side_header_box">
           <h2 class="cs-side_header_heading"> Do you have a project in your <br> mind? Keep connect us. </h2>
@@ -265,7 +265,7 @@
                 <span>Send</span>
               </button>
             </form>
-            <div class="cs-newsletter_text"> At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit. </div>
+            <div class="cs-newsletter_text"> Recive our news in your mail. </div>
           </div>
         </div>
         <div class="cs-side_header_box">
