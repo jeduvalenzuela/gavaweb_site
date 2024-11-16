@@ -162,8 +162,8 @@
       <div class="cs-slider cs-style1 cs-gap-24">
         <div class="cs-slider_left">
           <div class="cs-section_heading cs-style1">
-            <h3 class="cs-section_subtitle wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Our Awards</h3>
-            <h2 class="cs-section_title">We get multiple awards</h2>
+            <h3 class="cs-section_subtitle wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Why Us?</h3>
+            <h2 class="cs-section_title">Benefits of working with us</h2>
           </div>
           <div class="cs-height_45 cs-height_lg_20"></div>
           <div class="cs-slider_arrows cs-style1 cs-primary_color">
@@ -184,62 +184,25 @@
             <div class="cs-slider_wrapper">
               <div class="cs-slide">
                 <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2019</h3>
-                  <h2>Google awards</h2>
-                  <p>Website of the day</p>
-                  <p>Mobile exelence</p>
+                  <h3 class="cs-accent_color">Customization</h3>
+                  <!--h2>Customization</h2-->
+                  <p>Tailor-made development for specific needs.</p>
                 </div>
                 <div class="cs-height_40 cs-height_lg_30"></div>
                 <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2021</h3>
-                  <h2>CSS awards design</h2>
-                  <p>Honorable mention</p>
-                  <p>Desktop exelence</p>
+                  <h3 class="cs-accent_color">Integrations</h3>
+                  <p>Advanced integrations with systems and platforms.</p>
                 </div>
               </div>
               <div class="cs-slide">
                 <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2020</h3>
-                  <h2>New technology innovation</h2>
-                  <p>Honorable mention</p>
-                  <p>Desktop exelence</p>
+                  <h3 class="cs-accent_color">Visibility</h3>
+                  <p>Digital marketing strategies that increase online visibility.</p>
                 </div>
                 <div class="cs-height_40 cs-height_lg_30"></div>
                 <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2022</h3>
-                  <h2>UI/UX design of the month</h2>
-                  <p>Website of the day</p>
-                  <p>Mobile exelence</p>
-                </div>
-              </div>
-              <div class="cs-slide">
-                <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2019</h3>
-                  <h2>Google awards</h2>
-                  <p>Website of the day</p>
-                  <p>Mobile exelence</p>
-                </div>
-                <div class="cs-height_40 cs-height_lg_30"></div>
-                <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2021</h3>
-                  <h2>CSS awards design</h2>
-                  <p>Honorable mention</p>
-                  <p>Desktop exelence</p>
-                </div>
-              </div>
-              <div class="cs-slide">
-                <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2020</h3>
-                  <h2>New technology innovation</h2>
-                  <p>Honorable mention</p>
-                  <p>Desktop exelence</p>
-                </div>
-                <div class="cs-height_40 cs-height_lg_30"></div>
-                <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">2022</h3>
-                  <h2>UI/UX design of the month</h2>
-                  <p>Website of the day</p>
-                  <p>Mobile exelence</p>
+                  <h3 class="cs-accent_color">Experience</h3>
+                  <p>Responsive design focused on the user experience.</p>
                 </div>
               </div>
             </div>
