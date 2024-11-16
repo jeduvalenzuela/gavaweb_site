@@ -125,6 +125,13 @@
           <div class="cs-section_heading cs-style1">
             <h3 class="cs-section_subtitle">Why Choose Us</h3>
             <h2 class="cs-section_title">We listen to what our clients need</h2>
+
+            <div class="cs-hero_info">
+              <div>
+                <div class="cs-hero_subtitle">Somos un equipo de expertos en desarrollo web con un enfoque especial en la creación de sitios personalizados y complejos en WordPress. Combinamos tecnología de vanguardia con estrategias de marketing digital para ofrecerte soluciones completas que garantizan resultados medibles.</div>
+              </div>
+            </div>
+
             <div class="cs-height_45 cs-height_lg_20"></div>
             <a href="about.html" class="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
               <span>Learn More</span>
