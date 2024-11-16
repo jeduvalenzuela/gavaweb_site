@@ -41,7 +41,7 @@
             <div class="cs-nav cs-primary_font cs-medium">
               <ul class="cs-nav_list">
                 <!--li class="menu-item-has-children cs-mega_menu">
-                  <a href="<?php home_url( '/' ); ?>">Home</a>
+                  <a href="<?php home_url( '/' ); ?>">Hello World</a>
                   <ul class="cs-mega_wrapper">
                     <li>
                       <ul>
@@ -151,7 +151,8 @@
                     </li>
                   </ul>
                 </li-->
-                <li><a href="about.html">Hello!</a></li>
+                <li><a href="<?php echo home_url( '/' ); ?>">Hello World</a></li>
+                <li><a href="<?php echo home_url( '/contact/' ); ?>">Contact Us</a></li>
                 <!--li><a href="about.html">About</a></li>
                 <li class="menu-item-has-children"><a href="service.html">Services</a>
                   <ul>
