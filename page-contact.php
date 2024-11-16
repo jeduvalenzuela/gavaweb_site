@@ -49,6 +49,7 @@ get_header(); ?>
         <div class="cs-height_0 cs-height_lg_50"></div>
       </div>
       <div class="col-lg-6">
+        <?php echo do_shortcode( '[contact-form-7 id="87416ec" title="Contact form 1"]' ); ?>
         <!--div id="cs-form" action="https://api.web3forms.com/submit" method="POST" class="row">
           
           <input type="hidden" name="access_key" value="6d7bc3fc-6190-43c5-8298-89ac5ef7494f">
