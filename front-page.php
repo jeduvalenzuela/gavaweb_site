@@ -157,98 +157,7 @@
   </section>
   <!-- End Video Block Section -->
 
-  <!-- Start Latest Project -->
   <section>
-    <div class="container">
-      <div class="cs-section_heading cs-style1 text-center">
-        <h3 class="cs-section_subtitle">Latest Projects</h3>
-        <h2 class="cs-section_title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Portfolio to explore</h2>
-      </div>
-    </div>
-    <div class="cs-height_90 cs-height_lg_45"></div>
-    <div class="container">
-      <div class="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24">
-        <div class="cs-grid_sizer"></div>
-        <div class="cs-isotop_item cs-w66 mobile_apps">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_11.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item ui_ux_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_12.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item web_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_13.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item cs-w66 logo_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_14.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item cs-w66 mobile_apps">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_15.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item ui_ux_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_16.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="cs-height_90 cs-height_lg_40"></div>
-      <div class="text-center">
-        <a href="#" class="cs-text_btn">
-          <span>See More</span>
-          <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"></path>
-          </svg>                
-        </a>
-      </div>
-    </div>
-  </section>
-  <div class="cs-height_150 cs-height_lg_80"></div>
-  <!--section>
     <div class="container">
       <div class="cs-slider cs-style1 cs-gap-24">
         <div class="cs-slider_left">
@@ -341,7 +250,100 @@
     </div>
   </section>
   <div class="cs-height_150 cs-height_lg_80"></div>
-  <section class="cs-gradient_bg_1 cs-shape_wrap_3 cs-parallax">
+
+  <!-- Start Latest Project -->
+  <!--section>
+    <div class="container">
+      <div class="cs-section_heading cs-style1 text-center">
+        <h3 class="cs-section_subtitle">Latest Projects</h3>
+        <h2 class="cs-section_title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Portfolio to explore</h2>
+      </div>
+    </div>
+    <div class="cs-height_90 cs-height_lg_45"></div>
+    <div class="container">
+      <div class="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24">
+        <div class="cs-grid_sizer"></div>
+        <div class="cs-isotop_item cs-w66 mobile_apps">
+          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
+            <div class="cs-portfolio_hover"></div>
+            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_11.jpg"></div>
+            <div class="cs-portfolio_info">
+              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
+              <div class="cs-portfolio_subtitle">See Details</div>
+            </div>
+          </a>
+        </div>
+        <div class="cs-isotop_item ui_ux_design">
+          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
+            <div class="cs-portfolio_hover"></div>
+            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_12.jpg"></div>
+            <div class="cs-portfolio_info">
+              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
+              <div class="cs-portfolio_subtitle">See Details</div>
+            </div>
+          </a>
+        </div>
+        <div class="cs-isotop_item web_design">
+          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
+            <div class="cs-portfolio_hover"></div>
+            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_13.jpg"></div>
+            <div class="cs-portfolio_info">
+              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
+              <div class="cs-portfolio_subtitle">See Details</div>
+            </div>
+          </a>
+        </div>
+        <div class="cs-isotop_item cs-w66 logo_design">
+          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
+            <div class="cs-portfolio_hover"></div>
+            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_14.jpg"></div>
+            <div class="cs-portfolio_info">
+              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
+              <div class="cs-portfolio_subtitle">See Details</div>
+            </div>
+          </a>
+        </div>
+        <div class="cs-isotop_item cs-w66 mobile_apps">
+          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
+            <div class="cs-portfolio_hover"></div>
+            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_15.jpg"></div>
+            <div class="cs-portfolio_info">
+              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
+              <div class="cs-portfolio_subtitle">See Details</div>
+            </div>
+          </a>
+        </div>
+        <div class="cs-isotop_item ui_ux_design">
+          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
+            <div class="cs-portfolio_hover"></div>
+            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_16.jpg"></div>
+            <div class="cs-portfolio_info">
+              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
+              <div class="cs-portfolio_subtitle">See Details</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="cs-height_90 cs-height_lg_40"></div>
+      <div class="text-center">
+        <a href="#" class="cs-text_btn">
+          <span>See More</span>
+          <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"></path>
+          </svg>                
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="cs-height_150 cs-height_lg_80"></div-->
+  
+  <!--section class="cs-gradient_bg_1 cs-shape_wrap_3 cs-parallax">
     <div class="cs-shape_3 cs-to_up">
       <svg width="162" height="181" viewBox="0 0 162 181" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M156.833 178.434C156.833 177.053 157.954 175.932 159.335 175.932C160.716 175.932 161.837 177.053 161.837 178.434C161.837 179.814 160.716 180.935 159.335 180.935C157.954 180.935 156.833 179.814 156.833 178.434Z" fill="#FF4A17"/>
