@@ -9,6 +9,18 @@
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/hero_bg_2.jpg"></div>
           </div><!-- .cs-slide -->
           <div class="cs-slide">
+            <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/Blue-Numbers-AdobeStock_87781321-02-25-21-scaled.jpg"></div>
+          </div><!-- .cs-slide -->
+          <div class="cs-slide">
+            <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/financial-stock-market-graph-glowing-forex-chart-dark-background-2048x1365.jpg"></div>
+          </div><!-- .cs-slide -->
+          <div class="cs-slide">
+            <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/2034232.jpg"></div>
+          </div><!-- .cs-slide -->
+          <div class="cs-slide">
+            <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/3d-rendering-the-abstract-background-of-colorful-neon-wavy-lines-glowing-in-the-dark-modern-simple-wallpaper-generates-ai-free-photo.jpg"></div>
+          </div><!-- .cs-slide -->
+          <div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/hero_bg_3.jpg"></div>
           </div><!-- .cs-slide -->
         </div>
