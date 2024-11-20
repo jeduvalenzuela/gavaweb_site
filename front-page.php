@@ -17,9 +17,9 @@
           <div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/2034232.jpg"></div>
           </div><!-- .cs-slide -->
-          <div class="cs-slide">
+          <!--div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/3d-rendering-the-abstract-background-of-colorful-neon-wavy-lines-glowing-in-the-dark-modern-simple-wallpaper-generates-ai-free-photo.jpg"></div>
-          </div><!-- .cs-slide -->
+          </div--><!-- .cs-slide -->
           <!--div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/hero_bg_3.jpg"></div>
           </div--><!-- .cs-slide -->
@@ -69,7 +69,7 @@
   <section>
     <div class="container">
       <div class="cs-funfact_wrap_2 cs-type1">
-        <div class="cs-funfact_shape" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/funfact_shape_bg.svg"></div>
+        <div class="cs-funfact_shape" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/3d-rendering-the-abstract-background-of-colorful-neon-wavy-lines-glowing-in-the-dark-modern-simple-wallpaper-generates-ai-free-photo.jpg"></div>
         <div class="cs-funfacts">
           <div>
             <div class="cs-funfact cs-style2">
