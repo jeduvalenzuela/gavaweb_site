@@ -13,6 +13,7 @@
   <link rel="icon" href="https://gavaweb.com/wp-content/uploads/2024/11/cropped-logo-black.png">
   <!-- Site Title -->
   <title>GAVAWEB.com - Web Design + Digital Marketing</title>
+  <meta name="description" content="Gavaweb.com offers top-notch web design and digital marketing services to help businesses grow online.">
   <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/plugins/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/plugins/fontawesome.min.css">
   <link rel="stylesheet" href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/plugins/slick.css">
