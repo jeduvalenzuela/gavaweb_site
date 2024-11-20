@@ -5,7 +5,7 @@ Template Name: Contact
 get_header(); ?>
 
 <!-- Start Hero -->
-<div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/contact_hero_bg.jpg">
+<div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/image-man-reading-message-with-surprised-face-standing-amazed-light-blue-background.jpg">
     <div class="container">
       <div class="cs-page_heading_in">
         <h1 class="cs-page_title cs-font_50 cs-white_color">Contact Us</h1>
