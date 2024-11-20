@@ -5,9 +5,9 @@
     <div class="cs-slider cs-style1">
       <div class="cs-slider_container" data-autoplay="1" data-loop="1" data-speed="2000" data-center="0" data-fade-slide="1" data-slides-per-view="1">
         <div class="cs-slider_wrapper">
-          <div class="cs-slide">
+          <!--div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/hero_bg_2.jpg"></div>
-          </div><!-- .cs-slide -->
+          </div--><!-- .cs-slide -->
           <div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/abstract-light-blue-background-with-moving-lines-dots-concept-big-data-network-connection-worldwide-connection-internet-3d-rendering.jpg"></div>
           </div><!-- .cs-slide -->
@@ -20,9 +20,9 @@
           <div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/3d-rendering-the-abstract-background-of-colorful-neon-wavy-lines-glowing-in-the-dark-modern-simple-wallpaper-generates-ai-free-photo.jpg"></div>
           </div><!-- .cs-slide -->
-          <div class="cs-slide">
+          <!--div class="cs-slide">
             <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/hero_bg_3.jpg"></div>
-          </div><!-- .cs-slide -->
+          </div--><!-- .cs-slide -->
         </div>
       </div><!-- .cs-slider_container -->
     </div><!-- .cs-slider -->
