@@ -1,4 +1,6 @@
 <?php
+// Add feature image option for posts
+add_theme_support('post-thumbnails');
 
 function add_google_tag_to_head() {
     ?>
@@ -13,3 +15,4 @@ function add_google_tag_to_head() {
     <?php
 }
 add_action('wp_head', 'add_google_tag_to_head');
+
