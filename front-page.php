@@ -119,8 +119,8 @@
     <div class="cs-height_30 cs-height_lg_10"></div>
     <div class="cs-moving_text_wrap cs-type1 cs-bold cs-primary_font">
       <div class="cs-moving_text_in">
-        <div class="cs-moving_text cs-reverse_animation"><a href="#">SEO</a>-<a href="#">App design</a>-<a href="#">React Developer</a>-</div>
-        <div class="cs-moving_text cs-reverse_animation"><a href="#">SEO</a>-<a href="#">App design</a>-<a href="#">React Developer</a>-</div>
+        <div class="cs-moving_text cs-reverse_animation"><a href="#">SEO</a>-<a href="#">Web design</a>-<a href="#">Wordpress Developer</a>-</div>
+        <div class="cs-moving_text cs-reverse_animation"><a href="#">SEO</a>-<a href="#">Web design</a>-<a href="#">Wordpress Developer</a>-</div>
       </div>
     </div>
   </section>
@@ -208,13 +208,35 @@
               </div>
               <div class="cs-slide">
                 <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">Visibility</h3>
+                  <h3 class="cs-accent_color">SEO</h3>
                   <p>Digital marketing strategies that increase online visibility.</p>
                 </div>
                 <div class="cs-height_40 cs-height_lg_30"></div>
                 <div class="cs-time_line cs-style1">
-                  <h3 class="cs-accent_color">Experience</h3>
+                  <h3 class="cs-accent_color">Responsive</h3>
                   <p>Responsive design focused on the user experience.</p>
+                </div>
+              </div>
+              <div class="cs-slide">
+                <div class="cs-time_line cs-style1">
+                  <h3 class="cs-accent_color">Agile</h3>
+                  <p>Your project never ends. All our developments are scalable.</p>
+                </div>
+                <div class="cs-height_40 cs-height_lg_30"></div>
+                <div class="cs-time_line cs-style1">
+                  <h3 class="cs-accent_color">Wordpress</h3>
+                  <p>We are experts in wordpress. We initiate projects and improve third-party projects.</p>
+                </div>
+              </div>
+              <div class="cs-slide">
+                <div class="cs-time_line cs-style1">
+                  <h3 class="cs-accent_color">Hosting</h3>
+                  <p>We can advise you on the selection of a service according to the needs of your project.</p>
+                </div>
+                <div class="cs-height_40 cs-height_lg_30"></div>
+                <div class="cs-time_line cs-style1">
+                  <h3 class="cs-accent_color">Professional Email</h3>
+                  <p>Next to your site, a professional email for your business.</p>
                 </div>
               </div>
             </div>
