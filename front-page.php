@@ -651,8 +651,8 @@
       <div class="cs-partner_logo"><img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/partner_14.svg" alt="Partner"></div>
       <div class="cs-partner_logo"><img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/partner_15.svg" alt="Partner"></div>
     </div>
-  </div>
-  <div class="cs-height_130 cs-height_lg_70"></div-->
+  </div-->
+  <div class="cs-height_130 cs-height_lg_70"></div>
   <section>
     <div class="container">
       <div class="cs-cta cs-style1 cs-bg text-center cs-shape_wrap_1 cs-position_1" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/3d-rendering-the-abstract-background-of-colorful-neon-wavy-lines-glowing-in-the-dark-modern-simple-wallpaper-generates-ai-free-photo.jpg" >
