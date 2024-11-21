@@ -48,9 +48,9 @@
             <div class="cs-footer_item">
               <h2 class="cs-widget_title">Contact Us</h2>
               <ul class="cs-menu_widget cs-mp0">
-                <li>55/53 Jay Path Apt. 908</li>
+                <li>Argentina</li>
                 <li><a href="tel:+5491144799223">+54 911 4479 9223</a></li>
-                <li><a href="mailto:info@gavaweb.com" target="_blank" class="__cf_email__" data-cfemail="6a19080f09021e0f060b182a0f120b071a060f44040f1e">info@gavaweb.com</a></li>
+                <li><a href="mailto:info@gavaweb.com" target="_blank" >info@gavaweb.com</a></li>
               </ul>
             </div>
           </div>
