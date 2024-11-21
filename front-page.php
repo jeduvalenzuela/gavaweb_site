@@ -249,7 +249,7 @@
   <div class="cs-height_150 cs-height_lg_80"></div>
 
   <!-- Start Latest Project -->
-  <section>
+  <!--section>
     <div class="container">
       <div class="cs-section_heading cs-style1 text-center">
         <h3 class="cs-section_subtitle">Latest Projects</h3>
