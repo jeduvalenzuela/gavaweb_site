@@ -249,10 +249,10 @@
   <div class="cs-height_150 cs-height_lg_80"></div>
 
   <!-- Start Latest Project -->
-  <!--section>
+  <section>
     <div class="container">
       <div class="cs-section_heading cs-style1 text-center">
-        <h3 class="cs-section_subtitle">Latest Projects</h3>
+        <h3 class="cs-section_subtitle">Our Projects</h3>
         <h2 class="cs-section_title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Portfolio to explore</h2>
       </div>
     </div>
@@ -260,72 +260,56 @@
     <div class="container">
       <div class="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24">
         <div class="cs-grid_sizer"></div>
-        <div class="cs-isotop_item cs-w66 mobile_apps">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_11.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item ui_ux_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_12.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item web_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_13.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item cs-w66 logo_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_14.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item cs-w66 mobile_apps">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_15.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
-        <div class="cs-isotop_item ui_ux_design">
-          <a href="portfolio-details.html" class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_16.jpg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-              <div class="cs-portfolio_subtitle">See Details</div>
-            </div>
-          </a>
-        </div>
+
+        <?php
+          // Iniciar el loop de WP_Query
+          $args = array(
+              'post_type'      => 'project', // Cambia 'post' si usas un Custom Post Type
+              'posts_per_page' => 6,     // Número de posts a mostrar
+          );
+          
+          $query = new WP_Query($args);
+          
+          if ($query->have_posts()) :
+              $post_counter = 0; // Contador para identificar el número del post
+          
+              echo '<div class="posts-wrapper">'; // Contenedor principal
+          
+              while ($query->have_posts()) : $query->the_post();
+                  $post_counter++;
+          
+                  $additional_class = '';
+                  if ($post_counter === 1 || $post_counter === 4 || $post_counter === 5) {
+                      $additional_class = ' cs-w66';
+                  }
+          
+                  $post_class = 'cs-isotop_item' . $additional_class . ' mobile_apps';
+                  $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');
+                  ?>
+                  <div class="<?php echo esc_attr($post_class); ?>">
+                    <a href="#" class="cs-portfolio cs-style1 cs-type1">
+                      <div class="cs-portfolio_hover"></div>
+                      <div class="cs-portfolio_bg cs-bg" data-src="<?php esc_url($thumbnail_url); ?>"></div>
+                      <div class="cs-portfolio_info">
+                        <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+                        <h2 class="cs-portfolio_title"><?php the_title(); ?></h2>
+                        <!--div class="cs-portfolio_subtitle">See Details</div-->
+                      </div>
+                    </a>
+                  </div>
+                  
+          
+              <?php
+              endwhile;
+          
+              echo '</div>';
+          
+              wp_reset_postdata();
+          else :
+              echo '<p>No hay publicaciones disponibles.</p>';
+          endif;          
+        ?>
+        
       </div>
       <div class="cs-height_90 cs-height_lg_40"></div>
       <div class="text-center">
