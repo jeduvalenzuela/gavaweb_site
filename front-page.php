@@ -291,7 +291,7 @@
                 $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
                 ?>
                 <div class="<?php echo esc_attr($post_class); ?>">
-                    <a href="<?php echo esc_url(get_permalink()); ?>" class="cs-portfolio cs-style1 cs-type1">
+                    <a href="#" class="cs-portfolio cs-style1 cs-type1">
                         <div class="cs-portfolio_hover"></div>
                         <div class="cs-portfolio_bg cs-bg" data-src="<?php echo esc_url($thumbnail_url); ?>"></div>
                         <div class="cs-portfolio_info">
