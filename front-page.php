@@ -288,7 +288,7 @@
                 $post_class = 'cs-isotop_item' . $additional_class . ' mobile_apps';
 
                 // Obtener la URL de la miniatura si existe
-                $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
                 ?>
                 <div class="<?php echo esc_attr($post_class); ?>">
                     <a href="<?php echo esc_url(get_permalink()); ?>" class="cs-portfolio cs-style1 cs-type1">
