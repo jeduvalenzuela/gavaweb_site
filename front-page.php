@@ -262,53 +262,57 @@
         <div class="cs-grid_sizer"></div>
 
         <?php
-          // Iniciar el loop de WP_Query
-          $args = array(
-              'post_type'      => 'project', // Cambia 'post' si usas un Custom Post Type
-              'posts_per_page' => 6,     // Número de posts a mostrar
-          );
-          
-          $query = new WP_Query($args);
-          
-          if ($query->have_posts()) :
-              $post_counter = 0; // Contador para identificar el número del post
-          
-              echo '<div class="posts-wrapper">'; // Contenedor principal
-          
-              while ($query->have_posts()) : $query->the_post();
-                  $post_counter++;
-          
-                  $additional_class = '';
-                  if ($post_counter === 1 || $post_counter === 4 || $post_counter === 5) {
-                      $additional_class = ' cs-w66';
-                  }
-          
-                  $post_class = 'cs-isotop_item' . $additional_class . ' mobile_apps';
-                  $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');
-                  ?>
-                  <div class="<?php echo esc_attr($post_class); ?>">
-                    <a href="#" class="cs-portfolio cs-style1 cs-type1">
-                      <div class="cs-portfolio_hover"></div>
-                      <div class="cs-portfolio_bg cs-bg" data-src="<?php esc_url($thumbnail_url); ?>"></div>
-                      <div class="cs-portfolio_info">
-                        <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-                        <h2 class="cs-portfolio_title"><?php the_title(); ?></h2>
-                        <!--div class="cs-portfolio_subtitle">See Details</div-->
-                      </div>
+        // Iniciar el loop de WP_Query
+        $args = array(
+            'post_type'      => 'project', // Cambia 'post' si usas un Custom Post Type
+            'posts_per_page' => 6,         // Número de posts a mostrar
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) :
+            $post_counter = 0; // Contador para identificar el número del post
+
+            echo '<div class="posts-wrapper">'; // Contenedor principal
+
+            while ($query->have_posts()) : $query->the_post();
+                $post_counter++;
+
+                // Añadir la clase 'cs-w66' al primer post, cuarto y quinto
+                $additional_class = '';
+                if ($post_counter === 1 || $post_counter === 4 || $post_counter === 5) {
+                    $additional_class = ' cs-w66';
+                }
+
+                // Clases del artículo
+                $post_class = 'cs-isotop_item' . $additional_class . ' mobile_apps';
+
+                // Obtener la URL de la miniatura si existe
+                $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'thumbnail');
+                ?>
+                <div class="<?php echo esc_attr($post_class); ?>">
+                    <a href="<?php echo esc_url(get_permalink()); ?>" class="cs-portfolio cs-style1 cs-type1">
+                        <div class="cs-portfolio_hover"></div>
+                        <div class="cs-portfolio_bg cs-bg" data-src="<?php echo esc_url($thumbnail_url); ?>"></div>
+                        <div class="cs-portfolio_info">
+                            <div class="cs-portfolio_info_bg cs-accent_bg"></div>
+                            <h2 class="cs-portfolio_title"><?php the_title(); ?></h2>
+                            <!--div class="cs-portfolio_subtitle">See Details</div-->
+                        </div>
                     </a>
-                  </div>
-                  
-          
-              <?php
-              endwhile;
-          
-              echo '</div>';
-          
-              wp_reset_postdata();
-          else :
-              echo '<p>No hay publicaciones disponibles.</p>';
-          endif;          
+                </div>
+
+            <?php
+            endwhile;
+
+            echo '</div>'; // Cerrar el contenedor principal
+
+            wp_reset_postdata(); // Restaurar datos globales del post
+        else :
+            echo '<p>No hay publicaciones disponibles.</p>';
+        endif;
         ?>
+
         
       </div>
       <div class="cs-height_90 cs-height_lg_40"></div>
