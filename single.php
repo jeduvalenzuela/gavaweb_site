@@ -23,7 +23,11 @@
           <div class="col-lg-8">
             <div class="cs-post cs-style2">
               <div class="cs-post_thumb cs-radius_15">
-                <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/post_5.jpg" alt="Post" class="w-100 cs-radius_15">
+                <?php $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'large'); 
+                  if(!empty($thumbnail_url)){
+                    echo '<img src="' . $thumbnail_url . '" alt="Post" class="w-100 cs-radius_15">';
+                  }
+                ?>
               </div>
               <div class="cs-post_info">
                 <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
