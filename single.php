@@ -4,12 +4,12 @@
     <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/blog_details_hero_bg.jpg">
       <div class="container">
         <div class="cs-page_heading_in">
-          <h1 class="cs-page_title cs-font_50 cs-white_color">Blog Single</h1>
+          <h1 class="cs-page_title cs-font_50 cs-white_color"><?php the_title(); ?></h1>
           <ol class="breadcrumb text-uppercase">
             <li class="breadcrumb-item">
               <a href="index-2.html">Home</a>
             </li>
-            <li class="breadcrumb-item active">Blog Single</li>
+            <li class="breadcrumb-item active"><?php the_title(); ?></li>
           </ol>
         </div>
       </div>
@@ -30,24 +30,9 @@
                   <span class="cs-posted_by">07 Mar 2022</span>
                   <a href="#" class="cs-post_avatar">Tech</a>
                 </div>
-                <h2 class="cs-post_title">Creative studio programm coming soon</h2>
-                <p>Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
-                <blockquote class="cs-primary_font"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, who expound the actual teachings of the great explorer of the truth, the master. <small>Loren Mulari</small>
-                </blockquote>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated.</p>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/blog_details_img_1.jpg" alt="Blog Details" class="cs-radius_15 w-100">
-                    <div class="cs-height_45 cs-height_lg_45"></div>
-                  </div>
-                  <div class="col-md-6">
-                    <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/blog_details_img_2.jpg" alt="Blog Details" class="cs-radius_15 w-100">
-                    <div class="cs-height_45 cs-height_lg_45"></div>
-                  </div>
-                </div>
-                <h3>Art is powerful and imaginary source</h3>
-                <p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances.</p>
-                <p>So, blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain amount of people.</p>
+                
+                <?php the_content(); ?>                
+                
               </div>
             </div>
             <div class="cs-height_30 cs-height_lg_30"></div>
