@@ -85,7 +85,7 @@
                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
                 </div>
               </div>
-              <div class="cs-sidebar_item widget_search">
+              <!--div class="cs-sidebar_item widget_search">
                 <h4 class="cs-sidebar_widget_title">Search</h4>
                 <form class="cs-sidebar_search" action="#">
                   <input type="text" placeholder="Search...">
@@ -95,7 +95,7 @@
                     </svg>
                   </button>
                 </form>
-              </div>
+              </div-->
               <!--div class="cs-sidebar_item widget_categories">
                 <h4 class="cs-sidebar_widget_title">Categories</h4>
                 <ul>
