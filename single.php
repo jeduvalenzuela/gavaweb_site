@@ -197,7 +197,7 @@
                     if ($post_tags) :
                         foreach ($post_tags as $tag) : ?>
                             
-                          <a href="<?php echo get_tag_link($tag->term_id); ?>" class="tag-cloud-link">
+                          <a href="<?php //echo get_tag_link($tag->term_id); ?>#" class="tag-cloud-link">
                               <?php echo esc_html($tag->name); ?>
                           </a>
                   
