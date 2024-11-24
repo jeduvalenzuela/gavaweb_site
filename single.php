@@ -173,18 +173,30 @@
                   </li>
                 </ul>
               </div-->
-              <div class="cs-sidebar_item widget_tag_cloud">
-                <h4 class="cs-sidebar_widget_title">Tags</h4>
-                <div class="tagcloud">
-                  <a href="#" class="tag-cloud-link">Business</a>
-                  <a href="#" class="tag-cloud-link">Agency</a>
-                  <a href="#" class="tag-cloud-link">Artwork</a>
-                  <a href="#" class="tag-cloud-link">Marketing</a>
-                  <a href="#" class="tag-cloud-link">Information</a>
-                  <a href="#" class="tag-cloud-link">Design</a>
-                  <a href="#" class="tag-cloud-link">Wordpress</a>
-                </div>
+              <div class="cs-sidebar_item">
+                  <h4 class="cs-sidebar_widget_title">Tags</h4>
+                  <ul class="cs-recent_tags">
+                      <?php
+                      // Obtiene las etiquetas del post actual
+                      $post_tags = get_the_tags();
+
+                      // Verifica si el post tiene etiquetas
+                      if ($post_tags) :
+                          foreach ($post_tags as $tag) : ?>
+                              <li>
+                                  <div class="cs-tag_item">
+                                      <a href="<?php //echo get_tag_link($tag->term_id); ?>#" class="cs-tag_link">
+                                          <?php echo esc_html($tag->name); ?>
+                                      </a>
+                                  </div>
+                              </li>
+                          <?php endforeach;
+                      else : ?>
+                          <li>No tags found.</li>
+                      <?php endif; ?>
+                  </ul>
               </div>
+
             </div>
           </div>
         </div>
