@@ -173,20 +173,7 @@
                   </li>
                 </ul>
               </div-->
-              <div class="cs-sidebar_item widget_tag_cloud">
-                <h4 class="cs-sidebar_widget_title">Tags</h4>
-                <div class="tagcloud">
-                  <a href="#" class="tag-cloud-link">Business</a>
-                  <a href="#" class="tag-cloud-link">Agency</a>
-                  <a href="#" class="tag-cloud-link">Artwork</a>
-                  <a href="#" class="tag-cloud-link">Marketing</a>
-                  <a href="#" class="tag-cloud-link">Information</a>
-                  <a href="#" class="tag-cloud-link">Design</a>
-                  <a href="#" class="tag-cloud-link">Wordpress</a>
-                </div>
-              </div>
-            </div>
-            <div class="cs-sidebar_item">
+              <div class="cs-sidebar_item">
                 <h4 class="cs-sidebar_widget_title">Tags</h4>
                 <div class="tagcloud">
                     <?php
@@ -203,11 +190,10 @@
                   
                         <?php endforeach;
                     else : ?>
-                        <li>No tags found.</li>
                     <?php endif; ?>
-                    </div>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
