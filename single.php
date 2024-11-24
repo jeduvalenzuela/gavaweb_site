@@ -96,7 +96,7 @@
                   </button>
                 </form>
               </div>
-              <div class="cs-sidebar_item widget_categories">
+              <!--div class="cs-sidebar_item widget_categories">
                 <h4 class="cs-sidebar_widget_title">Categories</h4>
                 <ul>
                   <li class="cat-item">
@@ -115,65 +115,45 @@
                     <a href="#">Painting</a>
                   </li>
                 </ul>
-              </div>
+              </div-->
               <div class="cs-sidebar_item">
-                <h4 class="cs-sidebar_widget_title">Recent Posts</h4>
-                <ul class="cs-recent_posts">
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_1.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">How to studio setup...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_2.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">Creative people mind...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_3.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">AI take over human...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_4.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">You should now add...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                  <h4 class="cs-sidebar_widget_title">Recent Posts</h4>
+                  <ul class="cs-recent_posts">
+                      <?php
+                      // Define the query to get the recent posts
+                      $recent_posts_query = new WP_Query(array(
+                          'post_type'      => 'post',      // Tipo de post (puedes cambiarlo si necesitas otro CPT)
+                          'posts_per_page' => 4,           // Número de posts a mostrar
+                          'orderby'        => 'date',      // Ordenar por fecha
+                          'order'          => 'DESC'       // Orden descendente (post más reciente primero)
+                      ));
+
+                      // Loop para mostrar los posts recientes
+                      if ($recent_posts_query->have_posts()) :
+                          while ($recent_posts_query->have_posts()) : $recent_posts_query->the_post(); ?>
+                              <li>
+                                  <div class="cs-recent_post">
+                                      <a href="<?php the_permalink(); ?>" class="cs-recent_post_thumb">
+                                          <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>"></div>
+                                      </a>
+                                      <div class="cs-recent_post_info">
+                                          <h3 class="cs-recent_post_title">
+                                              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                          </h3>
+                                          <div class="cs-recent_post_date cs-primary_40_color"><?php echo get_the_date(); ?></div>
+                                      </div>
+                                  </div>
+                              </li>
+                          <?php endwhile;
+                          // Reset post data after the loop
+                          wp_reset_postdata();
+                      else : ?>
+                          <li>No recent posts found.</li>
+                      <?php endif; ?>
+                  </ul>
               </div>
-              <div class="cs-sidebar_item widget_archive">
+
+              <!--div class="cs-sidebar_item widget_archive">
                 <h4 class="cs-sidebar_widget_title">Archives</h4>
                 <ul>
                   <li>
@@ -192,7 +172,7 @@
                     <a href="#">25 jun 2020</a>
                   </li>
                 </ul>
-              </div>
+              </div-->
               <div class="cs-sidebar_item widget_tag_cloud">
                 <h4 class="cs-sidebar_widget_title">Tags</h4>
                 <div class="tagcloud">
