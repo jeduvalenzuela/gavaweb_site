@@ -1,4 +1,4 @@
-<?php get_footer(); ?>
+<?php get_header(); ?>
     <!-- Start Hero -->
     <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/blog_hero_bg.jpg">
       <div class="container">
