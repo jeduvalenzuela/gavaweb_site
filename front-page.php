@@ -655,13 +655,13 @@
                   <h2 class="cs-post_title"><a href="blog-details.html">Local SEO is a very essential role play for new websites</a></h2>
                   <div class="cs-post_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae...</div>
                   <div class="cs-post_meta">
-                    <div class="cs-post_avatar">
+                    <!--div class="cs-post_avatar">
                       <div class="cs-post_avatar_img"><img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/avatar_4.jpg" alt="Avatar"></div>
                       <div class="cs-post_avatar_info">
                         <h4>Jhone Doe</h4>
                         <p>London, United Kindom</p>
                       </div>
-                    </div>
+                    </div-->
                     <a href="blog-details.html" class="cs-text_btn"><span>Read More</span></a>
                   </div>
                 </div>
