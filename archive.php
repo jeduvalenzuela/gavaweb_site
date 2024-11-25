@@ -1,6 +1,6 @@
 <?php get_footer(); ?>
     <!-- Start Hero -->
-    <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="assets/img/blog_hero_bg.jpg">
+    <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/blog_hero_bg.jpg">
       <div class="container">
         <div class="cs-page_heading_in">
           <h1 class="cs-page_title cs-font_50 cs-white_color">Our Blog</h1>
@@ -22,7 +22,7 @@
           <div class="col-lg-8">
             <div class="cs-post cs-style2">
               <a href="blog-details.html" class="cs-post_thumb cs-radius_15">
-                <img src="assets/img/post_4.jpg" alt="Post" class="w-100 cs-radius_15">
+                <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/post_4.jpg" alt="Post" class="w-100 cs-radius_15">
               </a>
               <div class="cs-post_info">
                 <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
@@ -44,7 +44,7 @@
             <div class="cs-height_95 cs-height_lg_60"></div>
             <div class="cs-post cs-style2">
               <a href="blog-details.html" class="cs-post_thumb cs-radius_15">
-                <img src="assets/img/post_5.jpg" alt="Post" class="w-100 cs-radius_15">
+                <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/post_5.jpg" alt="Post" class="w-100 cs-radius_15">
               </a>
               <div class="cs-post_info">
                 <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
@@ -66,7 +66,7 @@
             <div class="cs-height_95 cs-height_lg_60"></div>
             <div class="cs-post cs-style2">
               <a href="blog-details.html" class="cs-post_thumb cs-radius_15">
-                <img src="assets/img/post_6.jpg" alt="Post" class="w-100 cs-radius_15">
+                <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/post_6.jpg" alt="Post" class="w-100 cs-radius_15">
               </a>
               <div class="cs-post_info">
                 <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
@@ -113,7 +113,7 @@
             <div class="cs-sidebar cs-right_sidebar cs-accent_5_bg_2">
               <div class="cs-sidebar_item author_search text-center">
                 <div class="cs-author_card">
-                  <img src="assets/img/avatar_1.png" alt="Aauthor">
+                  <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/avatar_1.png" alt="Aauthor">
                   <h3>Kuber Jontra</h3>
                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
                 </div>
@@ -155,7 +155,7 @@
                   <li>
                     <div class="cs-recent_post">
                       <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="assets/img/recent_post_1.jpg"></div>
+                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_1.jpg"></div>
                       </a>
                       <div class="cs-recent_post_info">
                         <h3 class="cs-recent_post_title">
@@ -168,7 +168,7 @@
                   <li>
                     <div class="cs-recent_post">
                       <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="assets/img/recent_post_2.jpg"></div>
+                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_2.jpg"></div>
                       </a>
                       <div class="cs-recent_post_info">
                         <h3 class="cs-recent_post_title">
@@ -181,7 +181,7 @@
                   <li>
                     <div class="cs-recent_post">
                       <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="assets/img/recent_post_3.jpg"></div>
+                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_3.jpg"></div>
                       </a>
                       <div class="cs-recent_post_info">
                         <h3 class="cs-recent_post_title">
@@ -194,7 +194,7 @@
                   <li>
                     <div class="cs-recent_post">
                       <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="assets/img/recent_post_4.jpg"></div>
+                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_4.jpg"></div>
                       </a>
                       <div class="cs-recent_post_info">
                         <h3 class="cs-recent_post_title">
@@ -248,7 +248,7 @@
     <!-- Start CTA -->
     <section>
       <div class="container">
-        <div class="cs-cta cs-style1 cs-bg text-center cs-shape_wrap_1 cs-position_1" data-src="assets/img/cta_bg.jpg">
+        <div class="cs-cta cs-style1 cs-bg text-center cs-shape_wrap_1 cs-position_1" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/cta_bg.jpg">
           <div class="cs-shape_1"></div>
           <div class="cs-shape_1"></div>
           <div class="cs-shape_1"></div>
