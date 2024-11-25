@@ -3,7 +3,28 @@
     <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/blog_hero_bg.jpg">
       <div class="container">
         <div class="cs-page_heading_in">
-          <h1 class="cs-page_title cs-font_50 cs-white_color">Our Blog</h1>
+          <h1 class="cs-page_title cs-font_50 cs-white_color">
+                  <?php
+                    // Muestra el título del archivo según el contexto (categoría, etiqueta, fecha, etc.)
+                    if (is_category()) {
+                        single_cat_title();
+                    } elseif (is_tag()) {
+                        single_tag_title();
+                    } elseif (is_author()) {
+                        the_post();
+                        echo 'Author Archives: ' . get_the_author();
+                        rewind_posts();
+                    } elseif (is_day()) {
+                        echo 'Daily Archives: ' . get_the_date();
+                    } elseif (is_month()) {
+                        echo 'Monthly Archives: ' . get_the_date('F Y');
+                    } elseif (is_year()) {
+                        echo 'Yearly Archives: ' . get_the_date('Y');
+                    } else {
+                        echo 'Archives';
+                    }
+                  ?>
+          </h1>
           <ol class="breadcrumb text-uppercase">
             <li class="breadcrumb-item">
               <a href="index-2.html">Home</a>
