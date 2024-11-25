@@ -67,7 +67,7 @@
 
               <?php endwhile; ?>
 
-              <div class="pagination">
+              <div class="cs-pagination_box cs-center cs-white_color cs-mp0 cs-semi_bold">
                   <?php
                   the_posts_pagination(array(
                       'mid_size'  => 2,
