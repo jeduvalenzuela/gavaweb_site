@@ -567,21 +567,28 @@
                                 <div class="cs-post cs-style3">
                                   <div class="cs-post_left">
                                     <div class="cs-posted_by">
-                                      <span class="cs-primary_font">07</span>
-                                      <span>Mar <br>2022</span>
+                                      <?php
+                                      // Obtén la fecha del post en el formato deseado
+                                      $post_date = get_the_date('d'); // Día (por ejemplo, '07')
+                                      $post_month = get_the_date('M'); // Mes abreviado (por ejemplo, 'Mar')
+                                      $post_year = get_the_date('Y'); // Año (por ejemplo, '2022')
+                                      ?>
+                                      
+                                      <span class="cs-primary_font"><?php echo $post_date; ?></span>
+                                      <span><?php echo $post_month; ?><br><?php echo $post_year; ?></span>
                                     </div>
                                   </div>
                                   <div class="cs-post_right">
                                     <h2 class="cs-post_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                     <div class="cs-post_subtitle"><?php the_excerpt(); ?></div>
                                     <div class="cs-post_meta">
-                                      <div class="cs-post_avatar">
+                                      <!--div class="cs-post_avatar">
                                         <div class="cs-post_avatar_img"><img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/avatar_2.jpg" alt="Avatar"></div>
                                         <div class="cs-post_avatar_info">
                                           <h4>Arino Admin</h4>
                                           <p>London, United Kindom</p>
                                         </div>
-                                      </div>
+                                      </div-->
                                       <a href="<?php the_permalink(); ?>" class="cs-text_btn"><span>Read More</span></a>
                                     </div>
                                   </div>
@@ -595,78 +602,7 @@
                           <li>No recent posts found.</li>
             <?php endif; ?>
           
-            <li>
-              <div class="cs-post cs-style3">
-                <div class="cs-post_left">
-                  <div class="cs-posted_by">
-                    <span class="cs-primary_font">07</span>
-                    <span>Mar <br>2022</span>
-                  </div>
-                </div>
-                <div class="cs-post_right">
-                  <h2 class="cs-post_title"><a href="blog-details.html">How to keep fear from ruining your art business with confident</a></h2>
-                  <div class="cs-post_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae...</div>
-                  <div class="cs-post_meta">
-                    <div class="cs-post_avatar">
-                      <div class="cs-post_avatar_img"><img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/avatar_2.jpg" alt="Avatar"></div>
-                      <div class="cs-post_avatar_info">
-                        <h4>Arino Admin</h4>
-                        <p>London, United Kindom</p>
-                      </div>
-                    </div>
-                    <a href="blog-details.html" class="cs-text_btn"><span>Read More</span></a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="cs-post cs-style3">
-                <div class="cs-post_left">
-                  <div class="cs-posted_by">
-                    <span class="cs-primary_font">15</span>
-                    <span>Apr <br>2022</span>
-                  </div>
-                </div>
-                <div class="cs-post_right">
-                  <h2 class="cs-post_title"><a href="blog-details.html">A.I becomes more powerful day by day with new approaches</a></h2>
-                  <div class="cs-post_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae...</div>
-                  <div class="cs-post_meta">
-                    <div class="cs-post_avatar">
-                      <div class="cs-post_avatar_img"><img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/avatar_3.jpg" alt="Avatar"></div>
-                      <div class="cs-post_avatar_info">
-                        <h4>David Milar</h4>
-                        <p>London, United Kindom</p>
-                      </div>
-                    </div>
-                    <a href="blog-details.html" class="cs-text_btn"><span>Read More</span></a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="cs-post cs-style3">
-                <div class="cs-post_left">
-                  <div class="cs-posted_by">
-                    <span class="cs-primary_font">20</span>
-                    <span>Aug <br>2022</span>
-                  </div>
-                </div>
-                <div class="cs-post_right">
-                  <h2 class="cs-post_title"><a href="blog-details.html">Local SEO is a very essential role play for new websites</a></h2>
-                  <div class="cs-post_subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae...</div>
-                  <div class="cs-post_meta">
-                    <!--div class="cs-post_avatar">
-                      <div class="cs-post_avatar_img"><img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/avatar_4.jpg" alt="Avatar"></div>
-                      <div class="cs-post_avatar_info">
-                        <h4>Jhone Doe</h4>
-                        <p>London, United Kindom</p>
-                      </div>
-                    </div-->
-                    <a href="blog-details.html" class="cs-text_btn"><span>Read More</span></a>
-                  </div>
-                </div>
-              </div>
-            </li>
+            
           </ul>
         </div>
       </div>
