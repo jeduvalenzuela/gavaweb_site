@@ -1,4 +1,4 @@
-<?php get_footer(); ?>
+<?php get_header(); ?>
     <!-- Start Hero -->
     <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/blog_hero_bg.jpg">
       <div class="container">
@@ -43,94 +43,68 @@
           <div class="col-lg-8">
 
           <?php if (have_posts()) : 
-            while (have_posts()) : the_post(); ?>
+              while (have_posts()) : the_post(); ?>
 
-              <div class="cs-post cs-style2">
-                <a href="blog-details.html" class="cs-post_thumb cs-radius_15">
-                  <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/post_4.jpg" alt="Post" class="w-100 cs-radius_15">
-                </a>
-                <div class="cs-post_info">
-                  <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
-                    <span class="cs-posted_by">07 Mar 2022</span>
-                    <a href="#" class="cs-post_avatar">Tech</a>
-                  </div>
-                  <h2 class="cs-post_title">
-                    <a href="#">A.I will take all human job within next year</a>
-                  </h2>
-                  <div class="cs-post_sub_title">Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.</div>
-                  <a href="blog-details.html" class="cs-text_btn">
-                    <span>See More</span>
-                    <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z" fill="currentColor" />
-                    </svg>
+                <div class="cs-post cs-style2">
+                  <a href="<?php the_permalink(); ?>" class="cs-post_thumb cs-radius_15">
+                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="<?php the_title(); ?>" class="w-100 cs-radius_15">
                   </a>
+                  <div class="cs-post_info">
+                    <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
+                      <span class="cs-posted_by"><?php echo get_the_date(); ?></span>
+
+                      <?php 
+                        $primary_cat = false;
+                        
+                        if (class_exists('WPSEO_Primary_Term')) {
+                            // Define el nombre del taxonomía (en este caso, 'category')
+                            $wpseo_primary_term = new WPSEO_Primary_Term('category', get_the_ID());
+                            $primary_term_id = $wpseo_primary_term->get_primary_term();
+                        
+                            if ($primary_term_id) {
+                                $primary_cat = get_term($primary_term_id);
+                            }
+                        }
+                        
+                        if ($primary_cat) {
+                            echo '<a href="' . get_category_link($primary_term_id) . '" class="cs-post_avatar">' . $primary_cat->name . '</a>';
+                        }
+                      ?>
+                      
+                    </div>
+                    <h2 class="cs-post_title">
+                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </h2>
+                    <div class="cs-post_sub_title"><?php the_excerpt(); ?></div>
+                    <a href="<?php the_permalink(); ?>" class="cs-text_btn">
+                      <span>See More</span>
+                      <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z" fill="currentColor" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
+                <div class="cs-height_95 cs-height_lg_60"></div>
+
+              <?php endwhile; ?>
+
+              <div class="pagination">
+                  <?php
+                  the_posts_pagination(array(
+                      'mid_size'  => 2,
+                      'prev_text' => __('&laquo; Previous', 'textdomain'),
+                      'next_text' => __('Next &raquo;', 'textdomain'),
+                  ));
+                  ?>
               </div>
-              <div class="cs-height_95 cs-height_lg_60"></div>
 
-            <?php endwhile; ?>
+            <?php else : ?>
+              <p>No posts found.</p>
+            <?php endif; ?>
 
-            <div class="pagination">
-                <?php
-                the_posts_pagination(array(
-                    'mid_size'  => 2,
-                    'prev_text' => __('&laquo; Previous', 'textdomain'),
-                    'next_text' => __('Next &raquo;', 'textdomain'),
-                ));
-                ?>
-            </div>
+            
 
-          <?php else : ?>
-            <p>No posts found.</p>
-          <?php endif; ?>
-
-            <div class="cs-post cs-style2">
-              <a href="blog-details.html" class="cs-post_thumb cs-radius_15">
-                <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/post_5.jpg" alt="Post" class="w-100 cs-radius_15">
-              </a>
-              <div class="cs-post_info">
-                <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
-                  <span class="cs-posted_by">07 Mar 2022</span>
-                  <a href="#" class="cs-post_avatar">Tech</a>
-                </div>
-                <h2 class="cs-post_title">
-                  <a href="#">Creative studio programm coming soon</a>
-                </h2>
-                <div class="cs-post_sub_title">Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.</div>
-                <a href="blog-details.html" class="cs-text_btn">
-                  <span>See More</span>
-                  <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z" fill="currentColor" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="cs-height_95 cs-height_lg_60"></div>
-
-            <div class="cs-post cs-style2">
-              <a href="blog-details.html" class="cs-post_thumb cs-radius_15">
-                <img src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/post_6.jpg" alt="Post" class="w-100 cs-radius_15">
-              </a>
-              <div class="cs-post_info">
-                <div class="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
-                  <span class="cs-posted_by">07 Mar 2022</span>
-                  <a href="#" class="cs-post_avatar">Tech</a>
-                </div>
-                <h2 class="cs-post_title">
-                  <a href="#">Artistic mind will be great for creation</a>
-                </h2>
-                <div class="cs-post_sub_title">Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tortor posuere ac ut consequat semper viverra nam libero justo. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Purus sit amet luctus venenatis lectus. Nunc aliquet bibendum enim facilisis. Pretium viverra suspendisse potenti nullam ac tortor vitae.</div>
-                <a href="blog-details.html" class="cs-text_btn">
-                  <span>See More</span>
-                  <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z" fill="currentColor" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="cs-height_60 cs-height_lg_40"></div>
-
-            <ul class="cs-pagination_box cs-center cs-white_color cs-mp0 cs-semi_bold">
+            <!--ul class="cs-pagination_box cs-center cs-white_color cs-mp0 cs-semi_bold">
               <li>
                 <a class="cs-pagination_item cs-center active" href="blog.html">1</a>
               </li>
@@ -150,7 +124,7 @@
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul-->
 
           </div>
           <div class="col-xl-3 col-lg-4 offset-xl-1">
@@ -163,7 +137,7 @@
                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
                 </div>
               </div>
-              <div class="cs-sidebar_item widget_search">
+              <!--div class="cs-sidebar_item widget_search">
                 <h4 class="cs-sidebar_widget_title">Search</h4>
                 <form class="cs-sidebar_search" action="#">
                   <input type="text" placeholder="Search...">
@@ -173,8 +147,8 @@
                     </svg>
                   </button>
                 </form>
-              </div>
-              <div class="cs-sidebar_item widget_categories">
+              </div-->
+              <!--div class="cs-sidebar_item widget_categories">
                 <h4 class="cs-sidebar_widget_title">Categories</h4>
                 <ul>
                   <li class="cat-item">
@@ -193,65 +167,44 @@
                     <a href="#">Painting</a>
                   </li>
                 </ul>
-              </div>
+              </div-->
               <div class="cs-sidebar_item">
-                <h4 class="cs-sidebar_widget_title">Recent Posts</h4>
-                <ul class="cs-recent_posts">
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_1.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">How to studio setup...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_2.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">Creative people mind...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_3.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">AI take over human...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="cs-recent_post">
-                      <a href="#" class="cs-recent_post_thumb">
-                        <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/recent_post_4.jpg"></div>
-                      </a>
-                      <div class="cs-recent_post_info">
-                        <h3 class="cs-recent_post_title">
-                          <a href="#">You should now add...</a>
-                        </h3>
-                        <div class="cs-recent_post_date cs-primary_40_color">15 Aug 2022</div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                  <h4 class="cs-sidebar_widget_title">Recent Posts</h4>
+                  <ul class="cs-recent_posts">
+                      <?php
+                      // Define the query to get the recent posts
+                      $recent_posts_query = new WP_Query(array(
+                          'post_type'      => 'post',      // Tipo de post (puedes cambiarlo si necesitas otro CPT)
+                          'posts_per_page' => 4,           // Número de posts a mostrar
+                          'orderby'        => 'date',      // Ordenar por fecha
+                          'order'          => 'DESC'       // Orden descendente (post más reciente primero)
+                      ));
+
+                      // Loop para mostrar los posts recientes
+                      if ($recent_posts_query->have_posts()) :
+                          while ($recent_posts_query->have_posts()) : $recent_posts_query->the_post(); ?>
+                              <li>
+                                  <div class="cs-recent_post">
+                                      <a href="<?php the_permalink(); ?>" class="cs-recent_post_thumb">
+                                          <div class="cs-recent_post_thumb_in cs-bg" data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>"></div>
+                                      </a>
+                                      <div class="cs-recent_post_info">
+                                          <h3 class="cs-recent_post_title">
+                                              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                          </h3>
+                                          <div class="cs-recent_post_date cs-primary_40_color"><?php echo get_the_date(); ?></div>
+                                      </div>
+                                  </div>
+                              </li>
+                          <?php endwhile;
+                          // Reset post data after the loop
+                          wp_reset_postdata();
+                      else : ?>
+                          <li>No recent posts found.</li>
+                      <?php endif; ?>
+                  </ul>
               </div>
-              <div class="cs-sidebar_item widget_archive">
+              <!--div class="cs-sidebar_item widget_archive">
                 <h4 class="cs-sidebar_widget_title">Archives</h4>
                 <ul>
                   <li>
@@ -270,7 +223,7 @@
                     <a href="#">25 jun 2020</a>
                   </li>
                 </ul>
-              </div>
+              </div-->
               <div class="cs-sidebar_item widget_tag_cloud">
                 <h4 class="cs-sidebar_widget_title">Tags</h4>
                 <div class="tagcloud">
