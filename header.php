@@ -153,6 +153,7 @@
                   </ul>
                 </li-->
                 <li><a href="<?php echo home_url( '/' ); ?>">Hello World</a></li>
+                <li><a href="<?php echo home_url( '/blog/' ); ?>">Blog</a></li>
                 <li><a href="<?php echo home_url( '/contact/' ); ?>">Contact Us</a></li>
                 <!--li><a href="about.html">About</a></li>
                 <li class="menu-item-has-children"><a href="service.html">Services</a>
