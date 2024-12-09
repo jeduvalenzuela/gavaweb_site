@@ -67,8 +67,8 @@ get_header(); ?>
     <div class="cs-height_65 cs-height_lg_10"></div>
 
     <?php // Obtén el proyecto anterior y el siguiente dentro de la misma taxonomía.
-    $prev_post = get_previous_post( true, '', 'project_category' ); // Cambia 'project_category' por la taxonomía asociada.
-    $next_post = get_next_post( true, '', 'project_category' );
+    $prev_post = get_previous_post( ); // Cambia 'project_category' por la taxonomía asociada.
+    $next_post = get_next_post();
     ?>
 
     <div class="cs-page_navigation cs-center">
