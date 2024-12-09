@@ -21,7 +21,7 @@ get_header(); ?>
   <div class="cs-height_150 cs-height_lg_80"></div>
   <div class="container">
     <div class="cs-portfolio_details">
-      <img src="assets/img/portfolio_details_1.jpg" alt="Image" class="cs-radius_15 w-100">
+      <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="cs-radius_15 w-100">
       <div class="cs-height_90 cs-height_lg_40"></div>
       <div class="row">
         <div class="col-lg-6">
@@ -93,7 +93,7 @@ get_header(); ?>
       <div class="cs-shape_1"></div>
       <div class="cs-shape_1"></div>
       <div class="cs-cta_in">
-        <h2 class="cs-cta_title cs-semi_bold cs-m0"><a href="https://static.laralink.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d7c7a78737e645d7c6f747372337e7270">[email&#160;protected]</a></h2>
+        <h2 class="cs-cta_title cs-semi_bold cs-m0"><a href="mailto:info@gavaweb.com" class="">info@gavaweb.com</a></h2>
       </div>
     </div>
   </section>
