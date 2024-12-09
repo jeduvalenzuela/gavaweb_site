@@ -5,7 +5,7 @@ Template Name: Project
 get_header(); ?>
   
   <!-- Start Hero -->
-  <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="assets/img/portfolio_details_bg.jpg">
+  <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/portfolio_details_bg.jpg">
     <div class="container">
       <div class="cs-page_heading_in">
         <h1 class="cs-page_title cs-font_50 cs-white_color"><?php the_title(); ?></h1>
