@@ -65,22 +65,34 @@ get_header(); ?>
       </div>
     </div>
     <div class="cs-height_65 cs-height_lg_10"></div>
+
+    <?php // Obtén el proyecto anterior y el siguiente dentro de la misma taxonomía.
+    $prev_post = get_previous_post( true, '', 'project_category' ); // Cambia 'project_category' por la taxonomía asociada.
+    $next_post = get_next_post( true, '', 'project_category' );
+    ?>
+
     <div class="cs-page_navigation cs-center">
       <div>
-        <a href="#" class="cs-text_btn cs-type1">
-          <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM26 5.25L1 5.25V6.75L26 6.75V5.25Z" fill="currentColor"/>
-          </svg>            
-          <span>Prev Project</span>               
-        </a>
+        <?php // Botón para el proyecto anterior.
+        if ( $prev_post ) : ?>
+            <a href="<?php echo get_permalink( $prev_post->ID ); ?>" class="cs-text_btn cs-type1">
+              <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM26 5.25L1 5.25V6.75L26 6.75V5.25Z" fill="currentColor"/>
+              </svg>            
+              <span>Prev Project</span> 
+            </a>
+        <?php endif; ?>
       </div>
       <div>
-        <a href="#" class="cs-text_btn">
-          <span>Next Project</span>
-          <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"></path>
-          </svg>                
-        </a>
+        <?php // Botón para el proyecto siguiente.
+        if ( $next_post ) : ?>
+            <a href="<?php echo get_permalink( $next_post->ID ); ?>" class="button next-project">
+              <span>Next Project</span>
+              <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"></path>
+              </svg>
+            </a>
+        <?php endif; ?>
       </div>
     </div>
   </div>
